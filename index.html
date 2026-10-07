@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sathish M R — DevOps, SRE, Cloud and Platform Engineering Leader.">
+<title>Sathish M R | DevOps & Platform Engineering Leader</title>
+<style>
+:root{--bg:#07090c;--panel:#0e1318;--panel2:#121921;--text:#f4f7fa;--muted:#98a5b2;--line:#25303a;--cyan:#6ee7f7;--green:#8ef0c1;--purple:#b8a4ff;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 75%);z-index:-2}
+body:after{content:"";position:fixed;width:600px;height:600px;right:-250px;top:50px;background:radial-gradient(circle,rgba(110,231,247,.08),transparent 65%);pointer-events:none;z-index:-1}
+a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 26px}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,9,12,.86);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:850;letter-spacing:-.04em}.links{display:flex;gap:21px;color:var(--muted);font-size:14px}.links a{text-decoration:none}.links a:hover{color:var(--text)}
+.hero{position:relative;padding:105px 0 70px;min-height:760px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.kicker{font-size:13px;font-weight:850;text-transform:uppercase;letter-spacing:.13em;color:var(--green)}
+h1{font-size:clamp(48px,7.6vw,90px);line-height:.94;letter-spacing:-.07em;max-width:900px;margin:18px 0 27px}.lead{font-size:20px;line-height:1.58;color:var(--muted);max-width:790px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:31px}.btn{display:inline-block;padding:12px 18px;border:1px solid var(--line);border-radius:10px;text-decoration:none;font-weight:750}.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.terminal{background:#080b0e;border:1px solid #26313a;border-radius:18px;box-shadow:0 25px 80px rgba(0,0,0,.4);overflow:hidden}.termbar{height:42px;border-bottom:1px solid #202830;display:flex;align-items:center;gap:7px;padding:0 15px}.dot{width:9px;height:9px;border-radius:50%;background:#39444d}.termtitle{margin-left:7px;color:#71808d;font-size:12px}.termbody{padding:22px 23px;font:13px/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;color:#b8c5cf}.prompt{color:var(--green)}.cyan{color:var(--cyan)}.purple{color:var(--purple)}.dim{color:#71808d}.cursor{display:inline-block;width:7px;height:14px;background:var(--cyan);vertical-align:-2px;animation:blink 1s infinite}@keyframes blink{50%{opacity:.15}}
+.flow{margin-top:38px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}.flow-node{border:1px solid var(--line);background:rgba(14,19,24,.8);padding:8px 11px;border-radius:9px;font-size:12px;color:#cbd5dd}.arrow{color:#4d6673}
+section{padding:84px 0;border-top:1px solid var(--line)}.eyebrow{color:var(--cyan);font-size:13px;font-weight:850;text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}h2{font-size:clamp(32px,5vw,52px);line-height:1.06;letter-spacing:-.05em;margin:0 0 32px;max-width:900px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.metric{position:relative;overflow:hidden;padding:25px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,var(--panel),rgba(14,19,24,.55))}.metric:after{content:"";position:absolute;width:100px;height:100px;right:-45px;bottom:-55px;border-radius:50%;background:rgba(110,231,247,.07)}.metric strong{display:block;font-size:39px;letter-spacing:-.05em}.metric span{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,var(--panel),rgba(18,25,33,.65));border:1px solid var(--line);border-radius:16px;padding:25px}.card h3{margin:0 0 9px;font-size:19px}.card p{margin:0;color:var(--muted)}
+.arch{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px;overflow:hidden}.archrow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;position:relative}.archrow:not(:last-child){margin-bottom:38px}.archrow:not(:last-child):after{content:"↓";position:absolute;bottom:-34px;left:50%;color:#4f6977;font-size:18px}.archbox{padding:17px 13px;text-align:center;border:1px solid #2a3943;border-radius:12px;background:#0b1015}.archbox b{display:block;font-size:14px}.archbox span{font-size:11px;color:var(--muted)}.archbox.cyanbox{box-shadow:inset 0 0 0 1px rgba(110,231,247,.12)}.archbox.greenbox{box-shadow:inset 0 0 0 1px rgba(142,240,193,.12)}.archbox.purplebox{box-shadow:inset 0 0 0 1px rgba(184,164,255,.12)}
+.tags{display:flex;flex-wrap:wrap;gap:9px}.tag{padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:14px;color:#dce4eb}
+.case{display:grid;grid-template-columns:1fr 2fr;gap:28px;padding:30px 0;border-bottom:1px solid var(--line)}.case:last-child{border-bottom:0}.case h3{font-size:23px;margin:0 0 5px}.meta{color:var(--green);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.07em}.case p,.case li{color:var(--muted)}.case p{margin:0 0 12px}.case ul{margin:0;padding-left:19px}
+.timeline{display:grid}.role{display:grid;grid-template-columns:180px 1fr;gap:28px;padding:25px 0;border-bottom:1px solid var(--line)}.date{color:var(--muted);font-size:14px}.role h3{margin:0 0 5px;font-size:21px}.role p{margin:0;color:var(--muted)}
+.quote{background:linear-gradient(145deg,var(--panel),#0a1015);border:1px solid var(--line);border-radius:18px;padding:32px;max-width:900px}.quote p{font-size:22px;line-height:1.5;margin:0}.quote small{display:block;margin-top:15px;color:var(--muted)}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:30px}.cta p{color:var(--muted);max-width:720px}footer{padding:36px 0 55px;color:var(--muted);font-size:14px}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{min-height:auto}.links{display:none}.grid,.metrics{grid-template-columns:1fr 1fr}.case{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:5px}.cta{display:block}.cta .btn{margin-top:20px}}
+@media(max-width:540px){.grid,.metrics,.archrow{grid-template-columns:1fr}.hero{padding-top:70px}.flow{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><div class="brand">Sathish M R</div><div class="links"><a href="#about">About</a><a href="#impact">Impact</a><a href="#architecture">Architecture</a><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="kicker">DevOps · SRE · Cloud · Platform Engineering</div>
+<h1>Engineering leader for reliable, scalable platforms.</h1>
+<p class="lead">I lead DevOps, SRE and platform engineering teams that turn infrastructure into an engineering advantage: faster delivery, stronger reliability, better security and lower operating cost.</p>
+<div class="buttons"><a class="btn primary" href="https://www.linkedin.com/in/sathish-mr/" target="_blank" rel="noopener">View LinkedIn</a><a class="btn" href="#work">Explore my work</a></div>
+<div class="flow"><span class="flow-node">Code</span><span class="arrow">→</span><span class="flow-node">CI/CD</span><span class="arrow">→</span><span class="flow-node">Kubernetes</span><span class="arrow">→</span><span class="flow-node">Observability</span><span class="arrow">→</span><span class="flow-node">Reliable Product</span></div>
+</div>
+<div class="terminal">
+<div class="termbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="termtitle">production-platform.sh</span></div>
+<div class="termbody">
+<span class="prompt">$</span> platform status<br>
+&nbsp;&nbsp;<span class="cyan">cloud</span> ........ AWS / GCP / Azure<br>
+&nbsp;&nbsp;<span class="cyan">orchestration</span> . Kubernetes / GKE<br>
+&nbsp;&nbsp;<span class="cyan">iac</span> ........... Terraform / Helm<br>
+&nbsp;&nbsp;<span class="cyan">delivery</span> ....... CI/CD automation<br>
+&nbsp;&nbsp;<span class="cyan">observability</span> .. Metrics / Logs / Traces<br>
+&nbsp;&nbsp;<span class="cyan">reliability</span> ... SLO / DR / Incident Response<br>
+&nbsp;&nbsp;<span class="purple">security</span> ....... SOC 2 / PCI DSS<br>
+<br>
+<span class="prompt">$</span> deploy --strategy progressive<br>
+<span class="green">✓</span> platform ready<br>
+<span class="dim">✓</span> reliability checks passed<br>
+<span class="dim">✓</span> observability connected<br>
+<span class="prompt">$</span> <span class="cursor"></span>
+</div></div>
+</div>
+</header>
+
+<section id="impact"><div class="wrap"><div class="eyebrow">Engineering impact</div><h2>Outcomes that matter to engineering and the business.</h2>
+<div class="metrics"><div class="metric"><strong>14+</strong><span>Years engineering experience</span></div><div class="metric"><strong>6+</strong><span>Years leadership</span></div><div class="metric"><strong>9+</strong><span>Years team management</span></div><div class="metric"><strong>3×</strong><span>Deployment time reduction</span></div></div>
+<div class="metrics" style="margin-top:14px"><div class="metric"><strong>60%</strong><span>Monitoring cost reduction</span></div><div class="metric"><strong>5 min</strong><span>MTTD target</span></div><div class="metric"><strong>15 min</strong><span>MTTR target</span></div><div class="metric"><strong>3</strong><span>Major cloud platforms</span></div></div>
+</div></section>
+
+<section id="about"><div class="wrap"><div class="eyebrow">Leadership profile</div><h2>Technical depth with business ownership.</h2>
+<div class="grid"><div class="card"><h3>Platform strategy</h3><p>Designing platform foundations that let product teams ship independently while maintaining reliability, security, governance and cost discipline.</p></div><div class="card"><h3>Cloud transformation</h3><p>Experience across AWS, GCP and Azure, including on-prem to cloud and cloud-to-cloud migrations, infrastructure as code and production hardening.</p></div><div class="card"><h3>Reliability culture</h3><p>Building SRE practices around Golden Signals, observability, SLOs, incident response, disaster recovery and measurable operational outcomes.</p></div></div>
+</div></section>
+
+<section id="architecture"><div class="wrap"><div class="eyebrow">DevOps architecture</div><h2>From developer commit to observable production.</h2>
+<div class="arch">
+<div class="archrow"><div class="archbox cyanbox"><b>Developer</b><span>Git · PR · Review</span></div><div class="archbox cyanbox"><b>CI/CD</b><span>Build · Test · Scan</span></div><div class="archbox cyanbox"><b>IaC</b><span>Terraform · Helm</span></div><div class="archbox cyanbox"><b>Registry</b><span>Images · Artifacts</span></div></div>
+<div class="archrow"><div class="archbox greenbox"><b>Kubernetes</b><span>GKE · Workloads</span></div><div class="archbox greenbox"><b>Autoscaling</b><span>HPA · VPA · Nodes</span></div><div class="archbox greenbox"><b>Security</b><span>Policy · IAM · Secrets</span></div><div class="archbox greenbox"><b>Cloud</b><span>AWS · GCP · Azure</span></div></div>
+<div class="archrow"><div class="archbox purplebox"><b>Metrics</b><span>Golden Signals</span></div><div class="archbox purplebox"><b>Logs</b><span>Search · Correlation</span></div><div class="archbox purplebox"><b>Traces</b><span>APM · Distributed</span></div><div class="archbox purplebox"><b>Response</b><span>Alert · Incident · DR</span></div></div>
+</div></div></section>
+
+<section id="work"><div class="wrap"><div class="eyebrow">Selected work</div><h2>Problems I have solved across cloud and platform engineering.</h2>
+<div class="case"><div><div class="meta">Apna · Platform Engineering</div><h3>Build platforms from the ground up</h3></div><div><p>Built production infrastructure and platform foundations with Kubernetes, Terraform, CI/CD, networking, security and observability as first-class components.</p><ul><li>Standardized infrastructure through infrastructure as code.</li><li>Created repeatable development, staging and production environments.</li><li>Established production-readiness and operational standards.</li></ul></div></div>
+<div class="case"><div><div class="meta">Apna · Cloud Transformation</div><h3>Lead multi-cloud transformations</h3></div><div><p>Led and contributed to infrastructure migrations across on-prem, AWS, GCP and Azure, balancing continuity, security, performance and cost.</p><ul><li>On-prem to AWS migration experience.</li><li>AWS to GCP and AWS to Azure transformation experience.</li><li>GCP to AWS migration experience with IaC and infrastructure hardening.</li></ul></div></div>
+<div class="case"><div><div class="meta">Apna · SRE & Observability</div><h3>Move from monitoring to reliability engineering</h3></div><div><p>Built observability and SRE practices around Golden Signals, actionable alerting, traces, metrics, logs and incident response.</p><ul><li>Targeted 5-minute MTTD and 15-minute MTTR.</li><li>Reduced monitoring costs by up to 60% through better tooling and alert design.</li><li>Improved operational visibility across critical services.</li></ul></div></div>
+<div class="case"><div><div class="meta">Apna · Developer Productivity</div><h3>Make delivery faster without sacrificing control</h3></div><div><p>Improved CI/CD and engineering workflows to reduce release friction while strengthening consistency, security and deployment confidence.</p><ul><li>Reduced deployment time by 3×.</li><li>Standardized delivery patterns and automation.</li><li>Aligned developer velocity with platform reliability.</li></ul></div></div>
+</div></section>
+
+<section id="expertise"><div class="wrap"><div class="eyebrow">Technical scope</div><h2>The stack behind the strategy.</h2>
+<div class="tags"><span class="tag">AWS</span><span class="tag">GCP</span><span class="tag">Azure</span><span class="tag">Kubernetes</span><span class="tag">GKE</span><span class="tag">Terraform</span><span class="tag">Helm</span><span class="tag">CI/CD</span><span class="tag">SRE</span><span class="tag">Platform Engineering</span><span class="tag">Observability</span><span class="tag">AIOps</span><span class="tag">Datadog</span><span class="tag">Prometheus</span><span class="tag">New Relic</span><span class="tag">Groundcover</span><span class="tag">Autoscaling</span><span class="tag">FinOps</span><span class="tag">Disaster Recovery</span><span class="tag">SOC 2 Type 2</span><span class="tag">PCI DSS</span><span class="tag">Cloud Migration</span><span class="tag">Developer Productivity</span></div>
+</div></section>
+
+<section><div class="wrap"><div class="eyebrow">Career</div><h2>Leadership across high-growth engineering environments.</h2>
+<div class="timeline"><div class="role"><div class="date">Current</div><div><h3>DevOps Leader · Apna</h3><p>Leading DevOps, SRE and infrastructure initiatives across cloud platforms, reliability, developer velocity, security and operational maturity. Includes platform and infrastructure work associated with the Bluemachines initiative within Apna.</p></div></div>
+<div class="role"><div class="date">Previous</div><div><h3>DevOps / Platform Engineering · Tookitaki</h3><p>Worked on infrastructure and reliability for financial crime technology, with strong focus on cloud, security, compliance, automation and operational excellence.</p></div></div>
+<div class="role"><div class="date">Earlier</div><div><h3>Engineering & Infrastructure Roles</h3><p>Experience spanning AI/ML, fintech, e-commerce, telecom, e-governance and e-learning environments.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap"><div class="quote"><p>“The goal of DevOps is not to operate infrastructure better. It is to help engineering organizations deliver better products, faster and with confidence.”</p><small>— Sathish M R</small></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta"><div><div class="eyebrow">Let's connect</div><h2>Building a platform, scaling a team, or improving reliability?</h2><p>I'm open to senior DevOps, SRE, Infrastructure, Platform Engineering and engineering leadership opportunities.</p></div><a class="btn primary" href="https://www.linkedin.com/in/sathish-mr/" target="_blank" rel="noopener">Connect on LinkedIn</a></div></div></section>
+<footer><div class="wrap">© 2026 Sathish M R · DevOps & Platform Engineering Leadership</div></footer>
+</body>
+</html>
